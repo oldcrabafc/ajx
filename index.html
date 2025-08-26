@@ -1,11 +1,125 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>我的个人主页</title>
+  <title>Oldcrab - Personal Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      padding: 15px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #2c3e50;
+      margin-top: 40px;
+    }
+    .portfolio {
+      margin-top: 20px;
+    }
+    .project {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .project a {
+      color: #3498db;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .project a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>你好，我是 Andrew Xue 👋</h1>
-  <p>欢迎来到我的个人介绍网站！</p>
+  <!-- Header -->
+  <header>
+    <h1>Andrew Xue</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>Hello 👋 I’m Andrew Xue, passionate about finance, data analysis, and technology. 
+         My work includes research on market cycles, audio signal processing, and automation tools.</p>
+    </section>
+
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio">
+        <div class="project">
+          <h3>📊 LPPL Market Analyzer</h3>
+          <p>A Python tool to detect bubbles and critical points in financial markets.</p>
+          <a href="https://github.com/yourusername/LPPL-Analyzer" target="_blank">View Project →</a>
+        </div>
+
+        <div class="project">
+          <h3>🎵 Voice Conduction Analysis</h3>
+          <p>Exploring the difference between bone conduction and air conduction using Fourier and STFT methods.</p>
+          <a href="https://github.com/yourusername/Voice-Analysis" target="_blank">View Project →</a>
+        </div>
+
+        <div class="project">
+          <h3>📅 Earnings Release Tracker</h3>
+          <p>A system to track and display company earnings dates with reminders and calendar export.</p>
+          <a href="https://github.com/yourusername/Earnings-Tracker" target="_blank">View Project →</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>📧 Email: yourname@example.com</p>
+      <p>💼 GitHub: <a href="https://github.com/yourusername" target="_blank">https://github.com/yourusername</a></p>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Andrew Xue | Powered by GitHub Pages</p>
+  </footer>
 </body>
 </html>
